@@ -1,2 +1,2 @@
-# Overflow Masters
-## This is a repository for algorithms that we use in competitive programming
+
+### There are implementations of algorithms that I use in competitive programming
