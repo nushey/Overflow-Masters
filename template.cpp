@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+#define ll long long
+#define MOD 1000000007
+using namespace std;
+
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    //================================//
+    
+    int t;
+    cin >> t;
+    while (t--) {
+
+    }
+    return 0;
+}
