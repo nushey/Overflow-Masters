@@ -1,2 +1,3 @@
 
-### There are implementations of algorithms that I use in competitive programming
+## Overflow Masters
+### There are implementations of algorithms that we use in competitive programming
