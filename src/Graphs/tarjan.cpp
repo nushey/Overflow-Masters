@@ -1,36 +1,36 @@
-vector<vector<int>> g;
-vector<bool> visited;
-vector<int> disc; // Discovery times of visited vertices
-vector<int> low;  // Lowest points reachable
-vector<bool> ap;  // Articulation points
-int times = 0;
-
-void DFS(int u, int parent)
+vector<int> G[N];
+vector<int> dfs_low(N, -1), dfs_num(N, -1), ap(N, 0); // ap for Articulation Points
+int dfs_count = 0;
+int root = -1; // For AP
+void dfs(int u, int p = -1)
 {
-    visited[u] = true;
-    disc[u] = low[u] = ++times;
-    int children = 0;
-    for (int v : g[u])
+    dfs_low[u] = dfs_num[u] = dfs_count++;
+    int child = 0;
+    for (int v : G[u])
     {
-        if (!visited[v])
+        if (v == p)
+            continue;
+        if (dfs_num[v] == -1)
         {
-            children++;
-            DFS(v, u);
-            low[u] = min(low[u], low[v]);
-            if (low[v] >= disc[u] && parent != -1)
+            child++;
+            dfs(v, u);
+            dfs_low[u] = min(dfs_low[u], dfs_low[v]);
+            if (dfs_low[v] > dfs_num[u])
             {
-                if (!ap[u])
-                    ap[u] = true;
+                // Bridge from u -> v
+                cout << "Bridge " << u << " -> " << v << "\n";
+            }
+            if (dfs_low[v] >= dfs_num[u])
+            {
+                // u is AP
+                ap[u] = 1;
             }
         }
-        else if (v != parent)
-        {
-            low[u] = min(low[u], disc[v]);
-        }
+        else
+            dfs_low[u] = min(dfs_low[u], dfs_num[v]);
     }
-    if (parent == -1 && children > 1)
+    if (u == root)
     {
-        if (!ap[u])
-            ap[u] = true;
+        ap[u] = child > 1;
     }
 }
