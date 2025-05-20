@@ -1,15 +1,14 @@
-vec<pair<long double, long double>>
-closestPair(vector<pair<long double, long double>> coord,
-            int n)
+using ld = long double;
+vec<pair<ld, ld>> closestPair(vector<pair<ld, ld>> coord, int n)
 {
     sort(ALL(coord));
-    set<pair<long double, long double>> s;
-    long double squaredDistance = LLONG_MAX;
-    vec<pair<long double, long double>> ans;
+    set<pair<ld, ld>> s;
+    ld squaredDistance = LLONG_MAX;
+    vec<pair<ld, ld>> ans;
     int j = 0;
     for (int i = 0; i < n; ++i)
     {
-        long double D = ceil(sqrt(squaredDistance));
+        ld D = ceil(sqrt(squaredDistance));
         while (coord[i].first - coord[j].first >= D)
         {
             s.erase({coord[j].second, coord[j].first});
@@ -23,13 +22,13 @@ closestPair(vector<pair<long double, long double>> coord,
 
         for (auto it = start; it != end; ++it)
         {
-            long double dx = coord[i].first - it->second;
-            long double dy = coord[i].second - it->first;
-            long double preDist = min(squaredDistance, dx * dx + dy * dy);
+            ld dx = coord[i].first - it->second;
+            ld dy = coord[i].second - it->first;
+            ld preDist = min(squaredDistance, dx * dx + dy * dy);
             if (preDist < squaredDistance)
             {
-                pair<long double, long double> one = {it->second, it->first};
-                pair<long double, long double> two = {coord[i].first, coord[i].second};
+                pair<ld, ld> one = {it->second, it->first};
+                pair<ld, ld> two = {coord[i].first, coord[i].second};
                 ans = {one, two};
                 squaredDistance = preDist;
             }
