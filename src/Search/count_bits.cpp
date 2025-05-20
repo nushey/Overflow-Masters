@@ -1,4 +1,4 @@
-void update_bits_and_sum(long mask, vector<int> &bits_used, long long &sum)
+void update_bits_and_sum(long mask, vec<int> &bits_used, long long &sum)
 {
     for (long j = mask; j > 0; j &= j - 1)
     {

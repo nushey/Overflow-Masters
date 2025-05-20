@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 #define L(i, j, n) for (int i = (j); i < (int)n; i++)
 #define LI(i, j, n) for (int i = (j); i <= (int)n; i++)
 #define R(i, j, n) for (int i = (j); i > (int)n; i--)
@@ -21,12 +20,10 @@ using pll = pair<ll, ll>;
 const int MOD = (int)1e9 + 7;
 const int oo = (int)1e9;
 
-void solve()
-{
+void solve(){
 }
 
-int main()
-{
+int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
@@ -35,8 +32,7 @@ int main()
     cin.tie(0);
     int TC = 1;
     // cin >> TT;
-    while (TC--)
-    {
+    while (TC--){
         solve();
     }
     return 0;
