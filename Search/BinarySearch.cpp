@@ -1,9 +1,5 @@
-#include <bits/stdc++.h>
-#define ll long long
-#define MOD 1000000007
-using namespace std;
 
-int binarySearch(int arr[], int low, int high, int x)
+int binSearch(int arr[], int low, int high, int x)
 {
     while (low <= high)
     {

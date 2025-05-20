@@ -1,62 +1,34 @@
-#include <bits/stdc++.h>
-#define ll long long
-#define MOD 1000000007
-using namespace std;
-
-const int MAX = 20000;
-
-struct Edge {
-    int u, v;  // Vértices que conecta la arista
-    int weight;  // Peso de la arista
-
-    bool operator<(const Edge& other) const {
-        return weight < other.weight;
-    }
+struct Edge
+{
+    int w, u, v;
+    Edge(int wx, int ux, int vx) { w = wx, u = ux, v = vx; }
+    bool operator<(const Edge &other) const { return w < other.w; }
 };
 
-int parent[MAX];
-int setSize[MAX];
-
-// Función para encontrar el representante de un conjunto usando compresión de caminos
-int find(int u) {
-    if (parent[u] != u) {
-        parent[u] = find(parent[u]);  // Compresión de caminos
+int main()
+{
+    int V, E;
+    cin >> V >> E;
+    vector<Edge> EL(E);
+    for (int i = 0; i < E; i++)
+    {
+        int u, v, w;
+        cin >> u >> v >> w;
+        EL[i] = Edge(w, u, v);
     }
-    return parent[u];
-}
-// Función para unir dos conjuntos usando unión por size
-void unionSets(int u, int v) {
-    int rootU = find(u);
-    int rootV = find(v);
-    if (rootU != rootV) {
-        // Unión por rango
-        if (setSize[rootU] > setSize[rootV]) {
-            parent[rootV] = rootU;
-            setSize[rootU] += setSize[rootV];
-        } else {
-            parent[rootU] = rootV;
-            setSize[rootV] += setSize[rootU];
-        } 
-    }
-}
-
-long long kruskal(int V, vector<Edge>& edges, long& elements) {
-    // Inicializar los representantes y rangos
-    for (int i = 0; i < V; i++) {
-        parent[i] = i;
-        setSize[i] = 1;
+    sort(EL.begin(), EL.end());
+    int mst_cost = 0, num_taken = 0;
+    UFDS UF(V);
+    for (auto &[w, u, v] : EL)
+    {
+        if (UF.isSameSet(u, v))
+            continue;
+        mst_cost += w;
+        UF.unionSet(u, v);
+        ++num_taken;
+        if (num_taken == V - 1)
+            break;
     }
 
-    // Ordenar las aristas por peso
-    sort(edges.begin(), edges.end());
-
-    long long mst_weight = 0;
-    for (const auto& edge : edges) {
-        if (find(edge.u) != find(edge.v)){
-            mst_weight += edge.weight;
-            unionSets(edge.u, edge.v);
-            elements--;
-        }
-    }
-    return mst_weight;
+    return 0;
 }
