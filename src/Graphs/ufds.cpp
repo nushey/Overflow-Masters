@@ -1,34 +1,18 @@
-class UFDS
-{
-private:
-    vi p, rank, setSize;
-    int numSets;
-
-public:
-    UFDS(int N)
-    {
-        p.assign(N, 0);
-        for (int i = 0; i < N; i++)
-            p[i] = i;
-        rank.assign(N, 0);
-        setSize.assign(N, 1);
-        numSets = N;
+struct UFDS {
+    vi p, size;
+    int numSets, n;
+    UFDS(int n) : p(n), size(n, 1), n(n) {
+        for (int i = 0; i < n; i++) p[i] = i;
+        numSets = n;
     }
-    int findSet(int i) { return (p[i] == i) ? i : (p[i] = findSet(p[i])); }
-    bool isSameSet(int i, int j) { return findSet(i) == findSet(j); }
-    int numDisjointSets() { return numSets; }
-    int sizeOfSet(int i) { return setSize[findSet(i)]; }
-    void unionSet(int i, int j)
-    {
-        if (isSameSet(i, j))
-            return;
-        int x = findSet(i), y = findSet(j);
-        if (rank[x] > rank[y])
-            swap(x, y);
-        p[x] = y;
-        if (rank[x] == rank[y])
-            ++rank[y];
-        setSize[y] += setSize[x];
-        --numSets;
+    int find(int i) { return (p[i] == i) ? i : (p[i] = find(p[i])); }
+    void join(int i, int j) {
+        int a = find(i), b = find(j);
+        if (a != b) {
+            if (size(b) && size(a)) swap(a, b);
+            p[b] = a;
+            size[a] += size[b];
+            numSets--;
+        }
     }
 };

@@ -1,5 +1,4 @@
-int lis(vector<int>& arr)
-{
+int lis(vector<int>& arr) {
     int n = arr.size();
     vector<int> lis(n, 1);
     for (int i = 1; i < n; i++) {

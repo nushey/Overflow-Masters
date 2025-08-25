@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.20)  20 MAY 2025 01:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.20)  25 AUG 2025 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,22 +476,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 14.
 
-(src/Details/template.cpp) (src/Details/police_based.cpp) (src/Graphs/bfs.cpp)
-(src/Graphs/dijkstra.cpp [2]) (src/Graphs/bellman.cpp) (src/Graphs/floyd.cpp)
-(src/Graphs/ufds.cpp [3]
+(src/Details/template.cpp) (src/Details/policy_based.cpp)
+(src/Graphs/dijkstra.cpp) (src/Graphs/bellman.cpp [2]) (src/Graphs/floyd.cpp)
+(src/Graphs/ufds.cpp) (src/Graphs/kruskal.cpp) (src/Graphs/prim.cpp [3])
+(src/Graphs/tarjan.cpp) (src/Graphs/scc.cpp [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(src/Graphs/kruskal.cpp [4]) (src/Graphs/prim.cpp) (src/Graphs/tarjan.cpp
-[5]) (src/DP/knapsack.cpp) (src/DP/lis.cpp) (src/DP/lcs.cpp)
-(src/DP/edit_dist.cpp) (src/Search/bin_search.cpp [6]) (src/Search/slid_win.cpp
-) (src/Search/count_bits.cpp) (src/Queries/bit.cpp [7])
-(src/Queries/seg_tree.cpp
+(src/Graphs/euler_tour.cpp [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8])
+)
+(src/DP/knapsack.cpp) (src/DP/lis.cpp [6]) (src/DP/lcs.cpp)
+(src/DP/edit_dist.cpp) (src/Search/bin_search.cpp) (src/Search/slid_win.cpp)
+[7] (src/Search/count_bits.cpp) (src/Queries/bit.cpp) (src/Queries/seg_tree.cpp
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 (src/Queries/idx_compression.cpp) (src/Math/sieve.cpp) (src/Math/lcm.cpp)
-(src/Math/combinatory.cpp) [9] (src/Math/closest_pairs.cpp)
+(src/Math/combinatory.cpp [9]) (src/Math/closest_pairs.cpp)
 (src/Math/distance.cpp) (src/Math/catalan.cpp) (src/Math/binpow.cpp)
 
 AED: lastpage setting LastPage
@@ -501,13 +505,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: F35B2FAD6A8BCED969AD6E30AE9424F5;3512.
+(rerunfilecheck)             Checksum: 6DE19D3FD3622C579C89F47A77744A2F;3620.
  ) 
 Here is how much of TeX's memory you used:
- 14838 strings out of 474485
- 228806 string characters out of 5743734
- 2411542 words of memory out of 5000000
- 36106 multiletter control sequences out of 15000+600000
+ 14882 strings out of 474485
+ 230365 string characters out of 5743734
+ 2556542 words of memory out of 5000000
+ 36152 multiletter control sequences out of 15000+600000
  562060 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,82p,425b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -517,9 +521,9 @@ fonts/cm/cmbx12.pfb><C:/Users/zebal/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb><C:/Users/zebal/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmr5.pfb><C:/Users/zebal/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on guide.pdf (10 pages, 245564 bytes).
+Output written on guide.pdf (10 pages, 246904 bytes).
 PDF statistics:
- 1105 PDF objects out of 1200 (max. 8388607)
- 749 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1103 PDF objects out of 1200 (max. 8388607)
+ 744 named destinations out of 1000 (max. 500000)
+ 273 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,11 +1,7 @@
-
-int binSearch(int arr[], int low, int high, int x)
-{
-    while (low <= high)
-    {
+int binSearch(int arr[], int low, int high, int x) {
+    while (low <= high) {
         int mid = low + (high - low) / 2;
-        if (arr[mid] == x)
-            return mid;
+        if (arr[mid] == x) return mid;
         if (arr[mid] < x)
             low = mid + 1;
         else
