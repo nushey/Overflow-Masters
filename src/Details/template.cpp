@@ -6,7 +6,7 @@ using namespace std;
 #define RI(i, j, n) for (int i = (j); i >= (int)n; i--)
 #define SZ(x) int((x).size())
 #define ALL(x) begin(x), end(x)
-#define vec vector
+#define vec vec
 #define pb push_back
 
 using ll = long long;

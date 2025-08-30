@@ -1,5 +1,4 @@
-using ld = long double;
-vec<pair<ld, ld>> closestPair(vector<pair<ld, ld>> coord, int n) {
+vec<pair<ld, ld>> closestPair(vec<pair<ld, ld>> coord, int n) {
     sort(ALL(coord));
     set<pair<ld, ld>> s;
     ld squaredDistance = LLONG_MAX;

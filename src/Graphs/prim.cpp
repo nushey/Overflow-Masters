@@ -2,9 +2,9 @@
 using namespace std;
 
 typedef pair<int, int> pii;
-vector<vector<pii>> AL;
-vector<int> taken;
-priority_queue<pii, vector<pii>, greater<pii>> pq;
+vec<vec<pii>> AL;
+vec<int> taken;
+priority_queue<pii, vec<pii>, greater<pii>> pq;
 
 void process(int u) {
     taken[u] = 1;
@@ -18,7 +18,7 @@ void process(int u) {
 int main() {
     int V, E;
     cin >> V >> E;
-    AL.assign(V, vector<pii>());
+    AL.assign(V, vec<pii>());
     for (int i = 0; i < E; i++) {
         int u, v, w;
         cin >> u >> v >> w;

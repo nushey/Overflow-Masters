@@ -7,7 +7,7 @@ struct Edge {
 int main() {
     int V, E;
     cin >> V >> E;
-    vector<Edge> EL(E);
+    vec<Edge> EL(E);
     for (int i = 0; i < E; i++) {
         int u, v, w;
         cin >> u >> v >> w;

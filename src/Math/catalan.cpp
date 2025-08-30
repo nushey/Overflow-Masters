@@ -1,4 +1,3 @@
-const int MOD = ....const int MAX = ....int catalan[MAX];
 void init() {
     catalan[0] = catalan[1] = 1;
     for (int i = 2; i <= n; i++) {

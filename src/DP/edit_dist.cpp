@@ -1,6 +1,6 @@
 int editDistance(string& s1, string& s2) {
     int n = s1.length(), m = s2.length();
-    vector<vector<int>> dp(n + 1, vector<int>(m + 1));
+    vec<vec<int>> dp(n + 1, vec<int>(m + 1));
 
     // Base cases
     for (int i = 0; i <= n; i++) dp[i][0] = i;
