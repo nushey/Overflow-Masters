@@ -24,9 +24,9 @@ int main() {
     cin.tie(nullptr);
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-    int TT = 1;
-    // cin >> TT;
-    while (TT--) {
+    int TC = 1;
+    // cin >> TC;
+    while (TC--) {
         solve();
     }
     return 0;
