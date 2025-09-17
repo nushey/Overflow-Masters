@@ -1,36 +1,39 @@
-void dfs(int u, int p, vec<vec<int>>& memo, vec<int>& lev, int log, vec<vec<int>>& g){
-    memo[u][0] = p;
-    LI(i, 1, log) memo[u][i] = memo[memo[u][i-1]][i-1];
-    for (int v : g[u]){
-        if (v != p){
-            lev[v] = lev[u] + 1;
-            dfs(v, u, memo, lev, log, g);
+struct LCA {
+    vec<int> depth, in, euler;
+    vec<vec<int>> g, st;
+    int K, n;
+    inline int Min(int i, int j) { return depth[i] <= depth[j] ? i : j; }
+    void dfs(int u, int p) {
+        in[u] = SZ(euler);
+        euler.pb(u);
+        for (int v : g[u])
+            if (v != p) {
+                depth[v] = depth[u] + 1;
+                dfs(v, u);
+                euler.pb(u);
+            }
+    }
+    LCA(int n_) : depth(n_), g(vec<vec<int>>(n_)), K(0), n(n_), in(n_) {
+        euler.reserve(2 * n);
+    }
+    void add_edge(int u, int v) { g[u].pb(v); }
+    void build(int root) {
+        dfs(root, -1);
+        int ln = SZ(euler);
+        while ((1 << K) <= ln) K++;
+        st = vec<vec<int>>(K, vec<int>(ln));
+        L(i, 0, ln) st[0][i] = euler[i];
+        for (int i = 1; (1 << i) <= ln; i++) {
+            for (int j = 0; j + (1 << i) <= ln; j++) {
+                st[i][j] = Min(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
+            }
         }
     }
-}
-
-int lca (int u, int v, int log, vec<int>& lev, vec<vec<int>>& memo){
-    if (lev[u] < lev[v]) swap(u, v);
-    RI(i, log, 0){
-        if ((lev[u] - pow(2, i)) >= lev[v])
-            u = memo[u][i];
+    int get(int u, int v) {
+        int su = in[u];
+        int sv = in[v];
+        if (sv < su) swap(sv, su);
+        int bit = log2(sv - su + 1);
+        return Min(st[bit][su], st[bit][sv - (1 << bit) + 1]);
     }
-    if (u == v) return u;
-    RI(i, log, 0){
-        if (memo[u][i] != memo[v][i]){
-            u = memo[u][i];
-            v = memo[v][i];
-        }
-    }
-    return memo[u][0];
-}
-
-void solve()
-{
-    int n, q;
-    vec<vec<int>> g (n, vec<int>());
-    int log = ceil(log2(n));
-    vec<vec<int>> memo (n, vec<int>(log+1, -1));
-    vec<int> lev(n);
-    dfs(0, 0, memo, lev, log, g);
-}
+};

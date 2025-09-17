@@ -32,6 +32,9 @@
 		"functional": "cpp",
 		"regex": "cpp",
 		"tuple": "cpp",
-		"valarray": "cpp"
+		"valarray": "cpp",
+		"ranges": "cpp",
+		"iostream": "cpp",
+		"iosfwd": "cpp"
 	}
 }

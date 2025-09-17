@@ -1,14 +1,10 @@
-void solve() {
-    vec<int> prices(n);
-    vec<int> pages(n);
-    vec<vec<int>> dp(n + 1, vec<int>(x + 1, 0));
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j <= x; j++) {
-            if (prices[i] <= j) {
-                dp[i + 1][j] = max(dp[i][j], pages[i] + dp[i][j - prices[i]]);
-            } else {
-                dp[i + 1][j] = dp[i][j];
-            }
-        }
+vector<int> v(n);
+vector<int> w(n);
+for (auto &x : w) cin >> x;
+for (auto &x : v) cin >> x;
+vector<int> dp(m + 1, 0);
+for (int i = 0; i < n; i++) {
+    for (int j = m; j >= w[i]; j--) {
+        dp[j] = max(dp[j], v[i] + dp[j - w[i]]);
     }
 }

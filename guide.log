@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.20)  30 AUG 2025 01:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.20)  16 SEP 2025 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -487,31 +487,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(src/DP/knapsack.cpp) (src/DP/lis.cpp [6]) (src/DP/lcs.cpp)
-(src/DP/edit_dist.cpp) (src/Search/bin_search.cpp) (src/Search/slid_win.cpp)
-[7] (src/Search/count_bits.cpp) (src/Queries/bit.cpp) (src/Queries/seg_tree.cpp
-[8]
+(src/Graphs/lca.cpp [6]) (src/DP/knapsack.cpp) (src/DP/lis.cpp) (src/DP/lcs.cpp
+) (src/DP/edit_dist.cpp [7]) (src/Search/bin_search.cpp)
+(src/Search/slid_win.cpp) (src/Search/count_bits.cpp) (src/Queries/bit.cpp
+[8]) (src/Queries/seg_tree.cpp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [9]
 (src/Queries/idx_compression.cpp) (src/Math/sieve.cpp) (src/Math/lcm.cpp)
-(src/Math/combinatory.cpp [9]) (src/Math/closest_pairs.cpp)
+(src/Math/combinatory.cpp) (src/Math/closest_pairs.cpp) [10]
 (src/Math/distance.cpp) (src/Math/catalan.cpp) (src/Math/binpow.cpp)
+(src/Math/divisors.cpp) (src/Strings/trie.cpp)
 
 AED: lastpage setting LastPage
-[10] (guide.aux)
+[11] (guide.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: 6DE19D3FD3622C579C89F47A77744A2F;3620.
+(rerunfilecheck)             Checksum: C093391ED30A574AF5CDF80479E7C32C;4083.
  ) 
 Here is how much of TeX's memory you used:
- 14874 strings out of 474485
- 230276 string characters out of 5743734
- 2556542 words of memory out of 5000000
- 36146 multiletter control sequences out of 15000+600000
+ 15038 strings out of 474485
+ 232694 string characters out of 5743734
+ 2553542 words of memory out of 5000000
+ 36223 multiletter control sequences out of 15000+600000
  562060 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,82p,425b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -521,9 +522,9 @@ fonts/cm/cmbx12.pfb><C:/Users/zebal/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmr10.pfb><C:/Users/zebal/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmr5.pfb><C:/Users/zebal/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on guide.pdf (10 pages, 246465 bytes).
+Output written on guide.pdf (11 pages, 262410 bytes).
 PDF statistics:
- 1101 PDF objects out of 1200 (max. 8388607)
- 742 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1212 PDF objects out of 1440 (max. 8388607)
+ 818 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 
