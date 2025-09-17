@@ -1,39 +1,41 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Template}{2}{section.1}%
+\contentsline {section}{\numberline {1}Template and Utils}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}C++ Template}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Policy Based}{2}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Graph}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Dijkstra}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Bellman-Ford}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {1.3}JAVA Template}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}JAVA BigInteger}{3}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Graph}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Dijkstra}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Bellman-Ford}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Floyd-Warshall}{3}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Disjoint Sets}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Kruskal}{3}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Prim}{3}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.5}Kruskal}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Prim}{4}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Tarjan}{4}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}SCC}{4}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Euler-Tour}{5}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Lowest Common Ancestor}{6}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.8}SCC}{5}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Euler-Tour}{6}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Lowest Common Ancestor}{7}{subsection.2.10}%
 \contentsline {section}{\numberline {3}Dynamic Programming}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Knapsack}{7}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}LIS}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}LCS}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Edit Distance}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.2}LIS}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}LCS}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Edit Distance}{8}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Search}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Binary Search}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Sliding Window}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Count Bits}{8}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Queries}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Fenwick Tree (BIT)}{8}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Segment Tree}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {4.3}Count Bits}{9}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Queries}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Fenwick Tree (BIT)}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Segment Tree}{10}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Index Compression}{10}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Math}{10}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Sieve}{10}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}LCM}{10}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Binomial Coefficient}{10}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Closest Pairs}{10}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.2}LCM}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Binomial Coefficient}{11}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Closest Pairs}{11}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Distance}{11}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Catalan}{11}{subsection.6.6}%
 \contentsline {subsection}{\numberline {6.7}Binary Exponentiation}{11}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Count Divisors}{11}{subsection.6.8}%
-\contentsline {section}{\numberline {7}Strings}{11}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Trie}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {6.8}Count Divisors}{12}{subsection.6.8}%
+\contentsline {section}{\numberline {7}Strings}{12}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Trie}{12}{subsection.7.1}%
